@@ -1,0 +1,19 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  app:
+    jwt-secret: abcdefghijklmnopqrstuvwxyzabsbchdchdcvdgshcvgdshvcdsvdbcvjhbv
+    jwt-expiration: 36000
+logging:
+  level:
+    com.ecommerce: debug
